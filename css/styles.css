@@ -1,0 +1,16 @@
+html,body {
+    background-color: #358185;
+}
+.page {
+}
+
+.hero {
+    min-height: 30em;
+    background: url("../img/jeremy-bishop-98691.jpg") no-repeat;
+    background-size: cover;
+}
+.page-title h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
