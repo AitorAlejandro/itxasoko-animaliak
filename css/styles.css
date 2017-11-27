@@ -1,6 +1,5 @@
 html,body {
-    background-color: #358185;
-    background: url("../img/jeremy-bishop-98691.jpg") no-repeat top center;
+    background: #052f3d url("../img/jeremy-bishop-98691.jpg") no-repeat center top;
     background-size: cover;
 }
 .page {
