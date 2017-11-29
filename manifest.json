@@ -4,7 +4,7 @@
 "theme_color": "#052f3d",
 "background_color": "#052f3d",
 "display": "standalone",
-"orientation": "portrait",
+"orientation": "any",
 "scope": "/itxasoko-animaliak/",
 "start_url": "/itxasoko-animaliak/"
 }
