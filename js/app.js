@@ -1,4 +1,4 @@
 $('#menuToggle').click(function () {
-    //$(this).toggleClass('active');
+    $(this).toggleClass('active');
     $('#overlay').toggleClass('open');
 });
