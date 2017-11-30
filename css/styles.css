@@ -110,6 +110,11 @@ html,body {
     overflow: hidden;
     font-size: 10vw;
 }
+@media only screen and (min-width: 50em) {
+    .overlay ul li a {
+        font-size: 3rem;
+    }
+}
 .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
     width: 100%;
 }
