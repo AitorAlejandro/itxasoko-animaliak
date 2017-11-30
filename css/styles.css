@@ -115,19 +115,8 @@ html,body {
         font-size: 3rem;
     }
 }
-.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
-    width: 100%;
-}
-.overlay ul li a:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0%;
-    transform: translateX(-50%);
-    height: 3px;
-    background: #FFF;
-    transition: .35s;
+.overlay ul li a:hover, .overlay ul li a:focus, .overlay ul li a:active {
+    text-decoration: underline;
 }
 
 @keyframes fadeInRight {
