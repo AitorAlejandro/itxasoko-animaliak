@@ -108,6 +108,7 @@ html,body {
     color: #FFF;
     text-decoration: none;
     overflow: hidden;
+    font-size: 10vw;
 }
 .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
     width: 100%;
