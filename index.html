@@ -15,7 +15,7 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-<!-- last deployment: 28/11/2017 -->
+<!-- last deployment: 01/12/2017 -->
 <div class="page">
     <header>
         <div class="hero">
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div>
-            <button class="button_container" id="menuToggle">
+            <button class="button_container" id="menuToggle" aria-pressed="false" aria-controls="mainNav">
                 <span class="top"></span>
                 <span class="middle"></span>
                 <span class="bottom"></span>
@@ -34,7 +34,7 @@
 </div>
 
 <div class="overlay" id="overlay">
-  <nav class="overlay-menu" role="navigation">
+  <nav class="overlay-menu" role="navigation" id="mainNav" aria-live="polite">
     <ul role="list">
       <li role="listitem"><a href="#">Balea</a></li>
       <li role="listitem"><a href="#">Delfina</a></li>
