@@ -198,6 +198,7 @@ html,body {
     position: relative;
     overflow: hidden;
     margin: 5em auto;
+    transition: all 0.7s ease-in-out;
 }
 .lista-animales li a {
     border-radius: 200px;
@@ -297,4 +298,32 @@ html,body {
     right: -50%;
     bottom: -50%;
     width: 300%;
+}
+
+.lista-animales .ficha-activa {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 90%;
+    height: 80vh;
+    z-index: 105;
+    border-radius: 1.5em;
+    margin: auto;
+    border-width: 0.33em;
+}
+.lista-animales .ficha-activa a {
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+    height: auto;
+    position: relative;
+    text-indent: 0px;
+    width: 100%;
+    z-index: 98;
+    cursor: auto;
+    text-align: center;
+    background-color: rgba(255,255,255,0.1);
+    font-size: 3em;
+}
+.lista-animales .ficha-activa img {
+    width: 100%;
 }
