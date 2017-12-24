@@ -40,9 +40,10 @@ html,body {
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
     overflow: hidden;
+    z-index: 99;
 }
 .overlay.open {
-    opacity: .88;
+    opacity: .9;
     visibility: visible;
     height: 100%;
 }
@@ -196,7 +197,7 @@ html,body {
     border-radius: 12em;
     position: relative;
     overflow: hidden;
-    margin: 3em auto;
+    margin: 5em auto;
 }
 .lista-animales li a {
     border-radius: 200px;
@@ -209,7 +210,7 @@ html,body {
     left: 0;
     text-indent: -9999px;
     width: 100%;
-    z-index: 100;
+    z-index: 98;
     cursor: pointer;
 }
 .lista-animales li img.ballena {
