@@ -3,6 +3,13 @@ function toggleMenu() {
     $('#overlay').toggleClass('open');
     $('.lista-animales li').removeClass('ficha-activa').addClass('ficha-no-activa');
 }
+
+function stopAllVideos() {
+    $('.video-wrapper iframe').each(function(){
+        this.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+    });
+}
+
 $('.menu-toggle, #mainNav a').click(function () {
     toggleMenu();
 });
@@ -16,4 +23,5 @@ $(".cerrar-ficha").click(function (e) {
     e.stopPropagation();
     $(this).closest('li').removeClass('ficha-activa').addClass('ficha-no-activa');
     $('body').removeClass('overflow-hidden');
-})
+    stopAllVideos();
+});
