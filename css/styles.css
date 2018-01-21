@@ -314,6 +314,7 @@ body.overflow-hidden {
     margin: auto;
     border-width: 0.33em;
     background-color: #052f3d;
+    overflow-y: auto;
 }
 .lista-animales .ficha-activa a {
     border-radius: 0;
@@ -337,8 +338,19 @@ body.overflow-hidden {
 .lista-animales .ficha-activa img.tiburon    {
     width: 100%;
     position: relative;
-    top: -4em;
     left: 0;
+}
+.ficha-no-activa .ficha-tecnica {
+    display: none;
+}
+.ficha-activa .ficha-tecnica {
+    text-align: center;
+    padding: 2em;
+}
+.ficha-activa .ficha-tecnica-lista dd {
+    margin-left: 0;
+    font-size: 2em;
+    margin-bottom: 1em;
 }
 
 .cerrar-ficha {
@@ -351,4 +363,17 @@ body.overflow-hidden {
     background-color: transparent;
     border: none;
     text-shadow: 0px 0px 3px #000;
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
