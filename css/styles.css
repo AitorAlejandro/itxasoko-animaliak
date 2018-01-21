@@ -347,6 +347,11 @@ body.overflow-hidden {
     text-align: center;
     padding: 2em;
 }
+.ficha-activa .ficha-tecnica-lista {
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .ficha-activa .ficha-tecnica-lista dd {
     margin-left: 0;
     font-size: 2em;
