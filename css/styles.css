@@ -377,3 +377,8 @@ body.overflow-hidden {
 	left: 0;
 	width: 100%;
 }
+
+footer, footer a {
+    text-align: center;
+    color: #fff;
+}
