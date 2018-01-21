@@ -4,6 +4,7 @@ html,body {
     background: #052f3d url("../img/jeremy-bishop-98691.jpg") no-repeat center top;
     background-size: 100%;
 }
+
 .page {
 }
 .hero {
@@ -26,6 +27,9 @@ html,body {
 
 
 /* MENU OVERLAY FULLSCREEN */
+body.overflow-hidden {
+    overflow: hidden;
+}
 .overlay {
     position: fixed;
     background: rgb(7,79,69);
@@ -224,7 +228,7 @@ html,body {
     transition: all 0.7s ease-in-out;
     width: 200%;
 }
-.lista-animales li a:hover + img.ballena {
+.lista-animales li.ficha-no-activa a:hover + img.ballena {
     top: 0;
     left: -60%;
     right: 0;
@@ -241,7 +245,7 @@ html,body {
     transition: all 0.7s ease-in-out;
     width: 200%;
 }
-.lista-animales li a:hover + img.delfin {
+.lista-animales li.ficha-no-activa a:hover + img.delfin {
     top: -5%;
     left: -50%;
     right: -50%;
@@ -258,7 +262,7 @@ html,body {
     transition: all 0.7s ease-in-out;
     width: 200%;
 }
-.lista-animales li a:hover + img.tortuga {
+.lista-animales li.ficha-no-activa a:hover + img.tortuga {
     top: -5%;
     left: -70%;
     right: -50%;
@@ -275,7 +279,7 @@ html,body {
     transition: all 0.7s ease-in-out;
     width: 200%;
 }
-.lista-animales li a:hover + img.pulpo {
+.lista-animales li.ficha-no-activa a:hover + img.pulpo {
     top: -25%;
     left: -100%;
     right: -50%;
@@ -292,7 +296,7 @@ html,body {
     transition: all 0.7s ease-in-out;
     width: 200%;
 }
-.lista-animales li a:hover + img.tiburon {
+.lista-animales li.ficha-no-activa a:hover + img.tiburon {
     top: -50%;
     left: -50%;
     right: -50%;
@@ -309,6 +313,7 @@ html,body {
     border-radius: 1.5em;
     margin: auto;
     border-width: 0.33em;
+    background-color: #052f3d;
 }
 .lista-animales .ficha-activa a {
     border-radius: 0;
@@ -323,7 +328,27 @@ html,body {
     text-align: center;
     background-color: rgba(255,255,255,0.1);
     font-size: 3em;
+    text-shadow: 0px 0px 3px #000;
 }
-.lista-animales .ficha-activa img {
+.lista-animales .ficha-activa img.ballena,
+.lista-animales .ficha-activa img.delfin,
+.lista-animales .ficha-activa img.tortuga,
+.lista-animales .ficha-activa img.pulpo,
+.lista-animales .ficha-activa img.tiburon    {
     width: 100%;
+    position: relative;
+    top: -4em;
+    left: 0;
+}
+
+.cerrar-ficha {
+    position: absolute;
+    right: 0.1em;
+    font-size: 0.5em;
+    top: 0.25em;
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    text-shadow: 0px 0px 3px #000;
 }
